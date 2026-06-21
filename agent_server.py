@@ -14,7 +14,7 @@ from pydantic import BaseModel
 DEEPSEEK_KEY = os.getenv("DEEPSEEK_API_KEY", )
 GEMINI_KEY   = os.getenv("GEMINI_API_KEY", )
 BOT_TOKEN    = os.getenv("TELEGRAM_BOT_TOKEN", )
-CHAT_ID      = os.getenv("8960086795")
+CHAT_ID      = os.getenv("TELEGRAM_CHAT_ID")
 
 if not all([DEEPSEEK_KEY, BOT_TOKEN, CHAT_ID]):
     raise RuntimeError(
